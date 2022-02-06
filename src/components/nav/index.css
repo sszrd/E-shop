@@ -1,0 +1,36 @@
+.footer-nav {
+    width           : 100vw;
+    display         : flex;
+    height          : 1.12rem;
+    align-items     : center;
+    position        : fixed;
+    bottom          : 0;
+    left            : 0;
+    z-index         : 100;
+    background-color: #fff;
+}
+
+.footer-nav>* {
+    flex  : 1;
+    color : #000;
+    height: 0.69rem;
+}
+
+.footer-nav>*>:nth-child(1) {
+    display    : block;
+    margin     : 0 auto;
+    width      : 0.4rem;
+    line-height: 0.4rem;
+    font-size  : 0.4rem;
+}
+
+.footer-nav>*>:nth-child(2) {
+    font-size  : 0.24rem;
+    line-height: 0.24rem;
+    margin-top : 0.05rem;
+    text-align : center;
+}
+
+.active {
+    color: #007aff;
+}

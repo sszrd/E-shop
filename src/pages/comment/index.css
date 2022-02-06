@@ -1,0 +1,97 @@
+.commentlist {
+    min-height      : 100vh;
+    padding         : .2rem;
+    background-color: #f1f1f1;
+}
+
+.commentlist-item {
+    background   : #fff;
+    border-radius: .16rem;
+    padding      : .32rem 0;
+    margin-bottom: .18rem;
+}
+
+.commentlist-wrap {
+    position   : relative;
+    width      : 100%;
+    padding    : 0 .2rem 0 .16rem;
+    display    : flex;
+    flex-flow  : row nowrap;
+    align-items: center;
+    height     : 1.48rem;
+}
+
+.commentlist-wrap img {
+    width : 1.48rem;
+    height: 1.48rem;
+    margin: 0 .15rem;
+}
+
+.commentlist-wrap>div {
+    margin-top : .15rem;
+    margin-left: .1rem;
+    align-self : start;
+    font-size  : .28rem;
+}
+
+.commentlist-wrap>button {
+    font-size: .32rem;
+    position : absolute;
+    right    : 0;
+    bottom   : 0;
+    width    : 2.2rem;
+    transform: scale(60%);
+    border   : 1px solid #0096d6;
+}
+
+.commentlist-comment {
+    border-top: 1px solid #0096d6;
+    padding   : .2rem;
+    position  : relative;
+    height    : 3.4rem;
+}
+
+.commentlist-comment>div {
+    padding      : .1rem 0;
+    border-bottom: 1px solid #c9c7c7;
+    font-size    : .28rem;
+}
+
+.commentlist-comment>div>span:nth-child(1) {
+    margin-right: .2rem;
+}
+
+.commentlist-comment>div>span:nth-child(2) {
+    color: #f1f1f1;
+}
+
+.commentlist-comment>div>span:nth-child(2)>* {
+    margin-right: .08rem;
+}
+
+.commentlist-comment textarea {
+    width     : 100%;
+    height    : 1.5rem;
+    margin-top: .2rem;
+    resize    : none;
+    border    : none;
+    outline   : none;
+}
+
+.commentlist-comment button {
+    background-color: #ff4d4f;
+    position        : absolute;
+    bottom          : 0;
+    right           : 0;
+    width           : 2.2rem;
+    transform       : scale(60%);
+    font-size       : .32rem;
+}
+
+.comment-tips {
+    width      : 100%;
+    color      : #969799;
+    font-size  : 14px;
+    line-height: 50px;
+    text-align : center;
+}

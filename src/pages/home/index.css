@@ -1,0 +1,167 @@
+.home-container {
+    padding         : 0 0.2rem;
+    width           : 100vw;
+    background-color: #f6f6f6;
+}
+
+.home-search {
+    height         : .89rem;
+    padding-top    : .13rem;
+    padding-bottom : .13rem;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    display        : flex;
+}
+
+.home-search>input {
+    width : calc(100vw - 0.26rem);
+    height: .65rem;
+}
+
+.midMenu {
+    display        : flex;
+    height         : .88rem;
+    margin         : 0 .28rem;
+    padding        : 0 .2rem;
+    font-size      : .28rem;
+    background     : #fff;
+    border-radius  : .43rem;
+    justify-content: center;
+    align-items    : center;
+    transform      : translate3d(0, -0.44rem, 0);
+}
+
+.midMenu>* {
+    height       : .44rem;
+    line-height  : .44rem;
+    border-radius: .22rem;
+    padding      : 0 0.16rem;
+    flex         : 1;
+    text-align   : center;
+}
+
+.subMenu {
+    margin-top     : -0.44rem;
+    font-size      : .26rem;
+    min-height     : 2.56rem;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+}
+
+.subMenu>* {
+    margin-top      : .18rem;
+    border-radius   : 0.15rem;
+    width           : 3.46rem;
+    height          : 1.1rem;
+    color           : #000;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    background-color: #fff;
+}
+
+.subMenu>*>img {
+    width       : .88rem;
+    height      : .57rem;
+    margin-right: .44rem;
+}
+
+.menu_active {
+    background-color: #0096d6;
+    color           : #fff;
+}
+
+.toplist-container {
+    margin-top: .44rem;
+    width     : 100%;
+    overflow  : hidden;
+    height    : 12.63rem;
+}
+
+.topList-label {
+    background-color: #0096d6;
+    font-size       : .34rem;
+    padding         : .13rem .18rem 0;
+    height          : 1rem;
+    border-radius   : .16rem .16rem 0 0;
+    width           : max-content;
+    color           : #fff;
+}
+
+.topList {
+    display   : flex;
+    flex-wrap : nowrap;
+    overflow  : hidden;
+    margin-top: -0.3rem;
+    width     : 352vw;
+    height    : 11.63rem;
+    font-size : 0.24rem;
+}
+
+.topList>div {
+    margin-right: 0.2rem;
+    height      : 100%;
+    width       : 88vw;
+}
+
+.topList-title {
+    background-color: #fff;
+    height          : .71rem;
+    border-radius   : .2rem .2rem 0 0;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+}
+
+.topList-content {
+    margin-top   : .01rem;
+    background   : #e6e6e6;
+    padding      : .18rem;
+    border-radius: 0 0 .16rem .16rem;
+    display      : flex;
+    flex-flow    : column nowrap;
+    height       : 10.92rem;
+}
+
+.topList-content>.toBuy {
+    flex         : 1;
+    margin-bottom: .18rem;
+    background   : #fff;
+    border-radius: .16rem;
+    overflow     : hidden;
+    display      : flex;
+    color        : #000;
+}
+
+.topList-content>.toBuy>* {
+    flex: 1;
+}
+
+.topList-content>.toBuy>:nth-child(1) {
+    width           : 2.32rem;
+    background-color: #f7f7f7;
+}
+
+.topList-content>.toBuy>:nth-child(2) {
+    display        : flex;
+    flex-flow      : column nowrap;
+    justify-content: space-around;
+    align-items    : center;
+    padding        : .2rem;
+}
+
+.topList-content>.toBuy>:nth-child(2)>:nth-child(1) {
+    font-size: .28rem;
+}
+
+.topList-content>.toBuy>:nth-child(2)>:nth-child(3) {
+    font-size  : .26rem;
+    color      : rgb(0, 150, 213);
+    font-weight: bold;
+}
+
+.home-container .fill {
+    height: 1.12rem;
+}

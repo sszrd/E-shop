@@ -1,0 +1,64 @@
+.user {
+    min-height: 100vh;
+    background: #f1f1f1;
+    position  : relative;
+}
+
+.user>div:nth-child(1) {
+    line-height     : .88rem;
+    text-align      : center;
+    font-size       : .32rem;
+    color           : #000;
+    font-weight     : 400;
+    background-color: #fff;
+}
+
+.user>div:nth-child(2) {
+    border-radius   : .16rem;
+    margin          : 1.5rem .2rem 0;
+    background-color: #fff;
+    width           : calc(100% - .4rem);
+    height          : 4.8rem;
+    display         : flex;
+    flex-flow       : column nowrap;
+}
+
+.user>div:nth-child(2)>:nth-child(1) {
+    margin-top: .3rem;
+    font-size : 1.15rem;
+    text-align: center;
+}
+
+.user>div:nth-child(2)>:nth-child(2) {
+    font-size : .28rem;
+    text-align: center;
+}
+
+.user>div:nth-child(2)>div {
+    margin-top     : .3rem;
+    display        : flex;
+    justify-content: space-around;
+}
+
+.user>div:nth-child(2)>div>* {
+    display    : flex;
+    flex-flow  : column nowrap;
+    align-items: center;
+    font-size  : .28rem;
+}
+
+.user>div:nth-child(2)>div>*>:nth-child(1) {
+    font-size: .68rem;
+}
+
+.user>button {
+    position        : absolute;
+    bottom          : 2.2rem;
+    width           : calc(100% - .4rem);
+    margin          : 0 .2rem;
+    background-color: #ff4d4f;
+}
+
+.user>div:nth-child(2)>div .iconfont {
+    color: #0096d6;
+}

@@ -1,0 +1,49 @@
+.register {
+    min-height : 100vh;
+    padding-top: 1rem;
+}
+
+.register-title {
+    font-size : .46rem;
+    text-align: center;
+    color     : #000;
+}
+
+.register-box {
+    display    : flex;
+    flex-flow  : column nowrap;
+    width      : 6.12rem;
+    padding-top: .6rem;
+    margin     : 0 auto;
+}
+
+.register-box>input {
+    font-size    : .26rem;
+    height       : .88rem;
+    background   : #fff;
+    border       : 1px solid #e0e0e0;
+    border-radius: .1rem;
+    margin-bottom: .3rem;
+    text-indent  : 0.26rem;
+}
+
+.register-box>.tologin {
+    font-size    : .24rem;
+    text-align   : right;
+    margin-bottom: .3rem;
+    color        : #000;
+}
+
+.register-box>.alertusername {
+    font-size    : .24rem;
+    color        : red;
+    margin-bottom: .3rem;
+    padding      : 0 0.1rem;
+}
+
+.register-box>.alertpassword {
+    font-size    : .24rem;
+    color        : red;
+    margin-bottom: .3rem;
+    padding      : 0 0.1rem;
+}

@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "iconfont";
+    /* Project id 2710170 */
+    src: url('./utils/font/iconfont.woff2?t=1627710202360') format('woff2'),
+        url('./utils/font/iconfont.woff?t=1627710202360') format('woff'),
+        url('./utils/font/iconfont.ttf?t=1627710202360') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+    content: "\e759";
+}
+
+.icon-cc-cart:before {
+    content: "\e61d";
+}
+
+.icon-comment:before {
+    content: "\e603";
+}
+
+.icon-star:before {
+    content: "\e709";
+}
+
+.icon-black:before {
+    content: "\e8dd";
+}
+
+.icon-top:before {
+    content: "\e61f";
+}
+
+.icon-Category:before {
+    content: "\e622";
+}
+
+.icon-white:before {
+    content: "\e69b";
+}
+
+.icon-search:before {
+    content: "\e67a";
+}
+
+.icon-delete:before {
+    content: "\e616";
+}
+
+.icon-menu:before {
+    content: "\e600";
+}
+
+.icon-collect:before {
+    content: "\e61e";
+}
+
+.icon-like:before {
+    content: "\e73b";
+}
+
+.icon-phone:before {
+    content: "\e6c7";
+}
+
+.icon-user:before {
+    content: "\e841";
+}
+
+.icon-email:before {
+    content: "\e631";
+}
+
+.icon-send:before {
+    content: "\e688";
+}
+
+.icon-password:before {
+    content: "\e989";
+}
+
+.icon-back:before {
+    content: "\e60a";
+}
+
+.icon-username:before {
+    content: "\e601";
+}
+
+html {
+    font-size: 13.33333vw;
+}
+
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 100px;
+    }
+}
+
+body {
+    margin: 0;
+    -webkit-text-size-adjust: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: .24rem;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+dl,
+dd {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    height: .8rem;
+    border-radius: .4rem;
+    line-height: .78rem;
+    font-size: .3rem;
+    background: #0096d6;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+input {
+    border: none;
+    padding: 0;
+    color: #999;
+    background-color: #f0f0f0;
+    font-size: 0.24rem;
+    border-radius: 0.32rem;
+    text-indent: 0.24rem;
+    outline: none;
+}
