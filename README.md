@@ -20,6 +20,8 @@
   
 ## 安装及快速开始
 ```
+git clone https://github.com/sszrd/E-shop.git --depth=1
+cd eshop
 npm instal
 npm run start
 ```
