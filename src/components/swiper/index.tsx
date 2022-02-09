@@ -16,19 +16,18 @@ const Swiper: FC<IProps> = (props: IProps): ReactElement => {
     const [shiftX, setShiftX] = useState<number>(0);  //总偏移量
     const [prevX, setPrevX] = useState<number>(0);  //上一次总偏移量
     const [startX, setStartX] = useState<number>(0);  //开始触摸时手指x坐标
+
     const autoPlay = useCallback(() => {
         timer.current = setInterval(() => {
             setCurIndex(curIndex => {
                 if (!picList.current || !picNav.current) {
                     return curIndex;
                 }
-
                 if (curIndex === picList.current.children.length - 1) {
                     picList.current.style.transition = "none";
-                    picList.current.style.transform = `translate3d(${-(picNav.current.children.length - 1) * picList.current.parentElement!.getBoundingClientRect().width}px)`;
+                    picList.current.style.transform = `translate3d(${-(picNav.current.children.length - 1) * picList.current.parentElement!.getBoundingClientRect().width}px, 0px, 0px)`;
                     return picNav.current.children.length;
                 }
-                picList.current.style.transition = "1.5s";
                 return curIndex + 1;
             })
         }, 3000)
@@ -59,6 +58,7 @@ const Swiper: FC<IProps> = (props: IProps): ReactElement => {
             if (!picList.current) {
                 return shiftX;
             }
+            picList.current.style.transition = "1.5s";
             return -curIndex * picList.current.parentElement!.getBoundingClientRect().width;
         })
     }, [curIndex])
@@ -75,8 +75,10 @@ const Swiper: FC<IProps> = (props: IProps): ReactElement => {
         setStartX(e.changedTouches[0].pageX);
         //当幻灯片到了第一组第一张将其移动到第二组第一张，当幻灯片到了第二组最后一张将其移动到第一组最后一张
         if (curIndex === 0) {
+            picList.current.style.transform = `translate3d(${-picNav.current.children.length * picList.current.parentElement!.getBoundingClientRect().width}px, 0px, 0px)`;
             setCurIndex(picNav.current.children.length);
         } else if (curIndex === picList.current.children.length - 1) {
+            picList.current.style.transform = `translate3d(${-(picNav.current.children.length - 1) * picList.current.parentElement!.getBoundingClientRect().width}px, 0px, 0px)`;
             setCurIndex(picNav.current.children.length - 1);
         }
         setPrevX(shiftX);
